@@ -4,16 +4,136 @@
     box-sizing: border-box;
 }
 
+:root {
+    --font-1: 'Poppins';
+    --font-2: 'Open Sans';
+    --or-1: #ffcc44;
+    --or-2: #ffcc45;
+}
+
 .nav__bar {
     width: 100%;
     height: auto;
     min-height: 90px;
-    border: 1px solid #000;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
 .nav__bar__items {
     display: flex;
+    width: 100%;
     flex-direction: row;
     justify-content: space-around;
-    border: 1px solid #000;
+}
+
+.nav__logo {
+    width: 60px;
+}
+
+.nav__links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav__links a {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-1);
+    font-weight: 500;
+    text-decoration: none;
+    color: #595857;
+    font-size: 16px;
+    position: relative;
+}
+
+.nav__links .active__link {
+    color: #323232;
+    font-weight: 600;
+}
+
+.nav__links .active__link::before {
+    position: absolute;
+    display: block;
+    height: 4px;
+    border-radius: 50px;
+    background: var(--or-1);
+    content: ' ';
+    width: 100%;
+    margin-top: 35px;
+}
+
+.nav__links a::after {
+    position: absolute;
+    display: block;
+    height: 4px;
+    border-radius: 50px;
+    background: var(--or-1);
+    content: ' ';
+    width: 0%;
+    margin-top: 35px;
+    transition: .6s;
+}
+
+.nav__links a:hover::after {
+    width: 100%;
+}
+
+.nav__buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav__btn__icon {
+    width: 40px;
+    height: 40px;
+    font-size: 23px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__btn__text {
+    display: flex;
+    border: 2px solid var(--or-2);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-family: var(--font-1);
+    font-size: 15px;
+    text-decoration: none;
+    background: var(--or-2);
+    color: #323232;
+    font-weight: 600;
+    transition: .6s;
+}
+
+.nav__btn__text:hover {
+    color: var(--or-2);
+    background-color: transparent;
+}
+
+#shopping-cart::after {
+    position: absolute;
+    display: flex;
+    content: attr(content);
+    width: 20px;
+    height: 20px;
+    background: var(--or-1);
+    border-radius: 50%;
+    margin-top: -35px;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #323232;
 }

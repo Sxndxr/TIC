@@ -6,7 +6,7 @@
 
 :root {
     --font-1: 'Poppins';
-    --font-2: 'Open Sans';
+    --font-2: 'Montserrat';
     --or-1: #ffcc44;
     --or-2: #ffcc45;
 }
@@ -153,4 +153,32 @@
 #section__header__img img {
     width: 100%;
     height: 100%;
+}
+
+#section__header__row {
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+#section__header__text h1 {
+    font-family: var(--font-2);
+    font-weight: 700;
+    font-size: 45px;
+    color: #323232;
+    text-transform: capitalize;
+}
+
+#section__header__text h1 i {
+    font-style: normal;
+    color: var(--or-1);
+}
+
+#section__header__text p {
+    font-family: var(--font-1);
+    color: #595857;
+    font-size: 13px;
+    font-weight: 500;
+    width: 70%;
 }

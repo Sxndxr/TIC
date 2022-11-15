@@ -9,6 +9,7 @@
     --font-2: 'Montserrat';
     --or-1: #ffcc44;
     --or-2: #ffcc45;
+    --section__margin: 100px;
 }
 
 .nav__bar {
@@ -218,5 +219,41 @@
 }
 
 #section__how__it__works > .row {
-    border: 1px solid #000;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 25px;
+}
+
+.how__it__works__item {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.how__it__works__item img {
+    width: 65%;
+    height: auto;
+}
+
+.how__it__works__item b {
+    font-family: var(--font-2);
+    font-weight: 800;
+    font-size: 18px;
+    text-align: center;
+}
+
+.how__it__works__item p {
+    color: #595857;
+    text-align: center;
+    font-family: var(--font-1);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#section__popular__menus {
+    margin-top: var(--section__margin);
+    height: auto;
+    min-height: 500px;
 }

@@ -256,4 +256,71 @@
     margin-top: var(--section__margin);
     height: auto;
     min-height: 500px;
+    padding-bottom: 50px;
+}
+
+#popular__menus__row {
+    margin-top: 50px;
+}
+
+.popular__menu {
+    height: 425px;
+    border-radius: 25px;
+    padding: 0;
+    background: #f1f1f1;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.popular__menu__image__area {
+    height: 300px;
+}
+
+.popular__menu__details__area {
+    height: 125px;
+    background: #fff;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.popular__menu__price__section {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.popular__menu__name {
+    font-family: var(--font-2);
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #323232;
+}
+
+.popular__menu__provider {
+    text-align: center;
+    color: #595857;
+    font-family: var(--font-1);
+    font-size: 15px;
+}
+
+.popular__menu__price__section b {
+    font-family: var(--font-2);
+    font-weight: 700;
+    flex-grow: 1;
+}
+
+.popular__menu__price__section i {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: var(--or-1);
 }

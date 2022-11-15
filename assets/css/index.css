@@ -144,7 +144,6 @@
     height: auto;
     min-height: 100vh;
     padding-bottom: 50px;
-    border: 1px solid #000;
     background: rgba(255, 204, 68, .1);
     padding-top: 100px;
 }

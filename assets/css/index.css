@@ -181,3 +181,42 @@
     font-weight: 500;
     width: 70%;
 }
+
+#section__how__it__works {
+    min-height: auto;
+    height: 500px;
+    margin-top: 100px;
+}
+
+.fil__ariane {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.fil__ariane b {
+    color: var(--or-2);
+    font-family: var(--font-2);
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.fil__ariane span {
+    font-size: 30px;
+    font-family: var(--font-1);
+    font-weight: 800;
+    color: #323232;
+}
+
+.fil__ariane p {
+    color: #595857;
+    margin-top: 10px;
+    font-family: var(--font-1);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#section__how__it__works > .row {
+    border: 1px solid #000;
+}

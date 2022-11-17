@@ -273,6 +273,9 @@
 
 .popular__menu__image__area {
     height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .popular__menu__details__area {
@@ -323,4 +326,9 @@
     align-items: center;
     font-size: 25px;
     color: var(--or-1);
+}
+
+.popular__menu__image__area img {
+    width: 65%;
+    height: auto;
 }

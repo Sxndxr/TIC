@@ -261,6 +261,8 @@
 
 #popular__menus__row {
     margin-top: 50px;
+    justify-content: space-between;
+    gap: 15px;
 }
 
 .popular__menu {
@@ -269,6 +271,7 @@
     padding: 0;
     background: #f1f1f1;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    margin-bottom: 50px;
 }
 
 .popular__menu__image__area {
@@ -331,4 +334,20 @@
 .popular__menu__image__area img {
     width: 65%;
     height: auto;
+}
+
+.loaded_more {
+    display: none;
+}
+
+.button__load__more {
+    width: fit-content;
+    padding: 15px 30px;
+    border: none;
+    margin: auto;
+    font-family: var(--font-2);
+    font-weight: 700;
+    border-radius: 10px;
+    background: var(--or-2);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

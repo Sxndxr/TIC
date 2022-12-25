@@ -351,3 +351,211 @@
     background: var(--or-2);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
+#testimonies__section {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    height: auto;
+    min-height: 500px;
+}
+
+#testimonies_landing_img {
+    height: auto;
+}
+
+#testimonies_landing_img img {
+    height: 400px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#testimonies__slider {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.testimonies__slider__testimony {
+    width: 375px;
+    height: 180px;
+    border-radius: 10px;
+    background: rgba(255, 204, 68, .1);
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.testimoner__infos {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    gap: 10px;
+}
+
+.testimoner__user__picture {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.testimoner__infos b {
+    font-family: var(--font-2);
+}
+
+.testimoner_talks {
+    width: 100%;
+    padding: 10px;
+}
+
+.testimoner_talks p {
+    font-family: var(--font-2);
+    line-height: 17px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#testimonies__row {
+    flex-wrap: nowrap;
+}
+
+#joinusSection {
+    height: auto;
+    min-height: 400px;
+    margin-bottom: var(--section__margin);
+}
+
+#joinusSection .row {
+    justify-content: center;
+    align-items: center !important;
+}
+
+#joinus {
+    height: auto;
+    min-height: 400px;
+    border-radius: 35px;
+    background: url("../img/joinusBg.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+}
+
+#joinus_text {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    background: rgba(50, 50, 50, .5);
+    border-radius: 35px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#joinus_text h2 {
+    width: 70%;
+    text-align: center;
+    color: #f1f1f1;
+    font-family: var(--font-2);
+    font-weight: 600;
+}
+
+.sign_login_button {
+    display: flex;
+    border: 2px solid var(--or-2);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-family: var(--font-1);
+    font-size: 15px;
+    text-decoration: none;
+    background: var(--or-2);
+    color: #323232;
+    font-weight: 600;
+    transition: .6s;
+}
+
+.sign_login_button:hover {
+    background: transparent;
+    color: var(--or-2);
+}
+
+#footer {
+    height: auto;
+    min-height: 500px;
+    background: rgba(255, 204, 68, .1);
+    padding: 25px;
+}
+
+.footer-col {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#footerLogo {
+    width: 200px;
+    align-items: center;
+}
+
+.footer-col li {
+    list-style-type: none;
+    font-size: 14px;
+}
+
+#LogoFooter {
+    font-family: var(--font-2);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#contact_box {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact__box__link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 25px;
+    color: #323232;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.contact__box__link:hover {
+    background: var(--or-1);
+    color: #f1f1f1;
+}
+
+.footer-col h5 {
+    font-family: var(--font-2);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+footer p {
+    text-align: center;
+}

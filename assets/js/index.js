@@ -50,3 +50,14 @@ if ('geolocation' in navigator) {
 function traiteLocalisation(lat, lon, acc, speed) {
     alert("Latitude : "+lat+", Longitude : "+lon+", Précision : "+acc+", Vitesse : "+speed);
 }
+
+window.addEventListener("scroll", function () {
+    if (this.window.scrollY > 250) {
+        this.document.getElementsByClassName("nav__bar")[0].style.background = "#fff";
+        this.document.getElementsByClassName("nav__bar")[0].style.boxShadow = "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px";
+        // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    } else {
+        this.document.getElementsByClassName("nav__bar")[0].style.background = "transparent";
+        this.document.getElementsByClassName("nav__bar")[0].style.boxShadow = "none";
+    }
+});

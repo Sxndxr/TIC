@@ -21,6 +21,7 @@
     position: fixed;
     top: 0;
     z-index: 10;
+    transition: .6s;
 }
 
 .nav__bar__items {

@@ -696,4 +696,11 @@ footer p {
     .row {
         padding: 10px;
     }
+    .fil__ariane p {
+        font-size: 14px;
+        text-align: center;
+    }
+    #testimonies__slider {
+        padding: 10px;
+    }
 }

@@ -34,7 +34,7 @@ menuCollapser.addEventListener("click", function() {
     }
 });
 
-/* LOCATION REQUESTER */
+/* LOCATION REQUESTER 
 
 if ('geolocation' in navigator) {
     alert("Localisation disponible");
@@ -61,3 +61,5 @@ window.addEventListener("scroll", function () {
         this.document.getElementsByClassName("nav__bar")[0].style.boxShadow = "none";
     }
 });
+
+*/

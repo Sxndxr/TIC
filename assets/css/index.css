@@ -116,7 +116,7 @@
     background: var(--or-2);
     color: #323232;
     font-weight: 600;
-    transition: .6s;
+    transition: .6s rg
 }
 
 .nav__btn__text:hover {

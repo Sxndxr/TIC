@@ -17,7 +17,10 @@
 <body>
     <nav class="nav__bar">
         <div class="nav__bar__items">
-            <img src="assets/img/logo.png" alt="TIC Logo Page d'accueil" class="nav__logo">
+            <div id="for__mobile">
+                <img src="assets/img/logo.png" alt="TIC Logo Page d'accueil" class="nav__logo">
+                <i class="fas fa-bars" id="nav__mobile__bars"></i>
+            </div>
             <div class="nav__links">
                 <a href="#" class="active__link">Accueil</a>
                 <a href="#">Découvrir</a>
@@ -26,12 +29,21 @@
                 <a href="#">Contact</a>
             </div>
             <div class="nav__buttons">
-                <button class="nav__btn__icon"><i class="fas fa-search"></i></button>
+                <button class="nav__btn__icon" id="NavSearch"><i class="fas fa-search"></i></button>
                 <button class="nav__btn__icon"><i class="fas fa-shopping-cart" id="shopping-cart" content="0"></i></button>
                 <a class="nav__btn__text" href="#"><i class="fas fa-sign-in"></i> S'inscrire</a>
             </div>
         </div>
     </nav>
+    <div class="searchBar">
+        <form action="#" class="container">
+            <div class="row">
+                <div class="col-md-7" id="searchText">
+                    <input type="text" name="q" id="q"><button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </form>
+    </div>
     <header class="container-fluid" id="section__header">
         <div class="row" id="section__header__row">
             <div class="col-md-5" id="section__header__text">
@@ -393,6 +405,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js”></script>
 <script src=”https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js”></script>
+<script src="assets/js/index.js"></script>
 <script>
     $(document).ready(function () {
             $(".loaded_more").slice(0, 0).show();

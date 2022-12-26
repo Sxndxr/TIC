@@ -2,8 +2,7 @@ function getPermissionFromUser() {
     navigator.permissions.query({name: "geolocation"}).then((result) => {
         if (result.state === 'granted' || result.state === 'prompt') {
                 navigator.geolocation.getCurrentPosition((position) => {
-                    traiteLocalisation(position.coords.latitude, position.coords.longitude, position.coords.accuracy, position.coords.speed);
-                    alert("Traitement de la loc...");
+                    traiteLocalisation(position.coords.latitude, position.coords.longitude);
                 }
             );
         } else {
@@ -13,7 +12,24 @@ function getPermissionFromUser() {
     );
 }
 
-function traiteLocalisation(lat, lon, acc, speed) {
+function userIsOniOS() {
+    return [
+      'iPad Simulator',
+      'iPhone Simulator',
+      'iPod Simulator',
+      'iPad',
+      'iPhone',
+      'iPod'
+    ].includes(navigator.platform)
+    // iPad on iOS 13 detection
+    || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+}
+
+if (userIsOniOS()) {
+    alert("User on iPhone !");
+}
+
+function traiteLocalisation(lat, lon) {
     var MapsApiKey = "AIzaSyATyBBK2j7E2x7KLIZeHLPJlCHfOc3qxG4";
     let con = new XMLHttpRequest();
     var url = "https://maps.googleapis.com/maps/api/geocode/json?latlng="+lat+","+lon+"&key="+MapsApiKey;

@@ -191,6 +191,7 @@
     gap: 10px;
     padding-top: 10px;
     cursor: pointer;
+    transition: .6s;
 }
 
 .discover__search_result__image {
@@ -255,4 +256,8 @@
 #providers__section__search__results .row {
     gap: 25px;
     justify-content: center;
+}
+
+.discover__search__result:hover {
+    background: rgba(255, 204, 68, .1);
 }

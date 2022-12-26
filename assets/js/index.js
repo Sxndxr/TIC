@@ -34,22 +34,6 @@ menuCollapser.addEventListener("click", function() {
     }
 });
 
-/* LOCATION REQUESTER 
-
-if ('geolocation' in navigator) {
-    alert("Localisation disponible");
-    navigator.geolocation.getCurrentPosition((position) => {
-        traiteLocalisation(position.coords.latitude, position.coords.longitude, position.coords.accuracy, position.coords.speed);
-    }
-
-    )
-} else {
-    alert('Pas de géolocalisation sur cet appareil.');
-}
-
-function traiteLocalisation(lat, lon, acc, speed) {
-    alert("Latitude : "+lat+", Longitude : "+lon+", Précision : "+acc+", Vitesse : "+speed);
-}
 
 window.addEventListener("scroll", function () {
     if (this.window.scrollY > 250) {
@@ -61,5 +45,3 @@ window.addEventListener("scroll", function () {
         this.document.getElementsByClassName("nav__bar")[0].style.boxShadow = "none";
     }
 });
-
-*/

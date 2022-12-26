@@ -125,6 +125,46 @@
             </div>
         </div>
     </section>
+    <section class="container" id="sort__options">
+        <div class="row">
+            <form action="#" method="post">
+                <div class="sort__critere">
+                    <label for="distance">Distance</label>
+                    <select value="distance">
+                        <option name="ASC">Distance Croissante</option>
+                        <option name="DESC">Distance Décroissante</option>
+                    </select>
+                </div>
+                <div class="sort__critere">
+                    <label for="popularity">Popularité</label>
+                    <select value="popularity">
+                        <option name="DESC">Plus au moins populaire</option>
+                        <option name="ASC">Moins au plus populaire</option>
+                    </select>
+                </div>
+                <div class="sort__critere">
+                    <label for="delivery">Livraison</label>
+                    <select value="delivery">
+                        <option name="Free">Gratuite</option>
+                        <option name="ASC">Prix Croissants</option>
+                        <option name="DESC" selected>Prix Décroissants</option>
+                    </select>
+                </div>
+                <div class="sort__critere">
+                    <label for="providers">Etablissement</label>
+                    <select value="providers">
+                        <option name="ets1">La Mie Dorée</option>
+                        <option name="ets1">Provider #2</option>
+                    </select>
+                </div>
+
+                <button type="submit">
+                    <i class="fas fa-sort"></i>
+                </button>
+                
+            </form>
+        </div>
+    </section>
 
     <section class="container-fluid" id="providers__section__search__results">
         <div class="row">

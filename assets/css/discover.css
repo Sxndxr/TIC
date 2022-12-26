@@ -117,8 +117,8 @@
 }
 
 #categories__col {
-    height: 250px;
-    padding: 30px;
+    height: 185px;
+    padding: 15px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -261,6 +261,68 @@
 .discover__search__result:hover {
     background: rgba(255, 204, 68, .1);
 }
+
+#sort__options {
+    height: auto;
+    min-height: 200px;
+}
+
+#sort__options form {
+    height: auto;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.sort__critere {
+    width: 250px;
+    height: auto;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sort__critere label {
+    font-family: var(--font-1);
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.sort__critere select {
+    height: 40px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 2px solid #323232;
+    background: #f2f2f2;
+    font-family: var(--font-1);
+    font-weight: 600;
+    color: #c0c0c0;
+    font-size: 16px;
+}
+
+#sort__options form button {
+    height: 60px;
+    width: 60px;
+    border: 2px solid var(--or-2);
+    background: var(--or-2);
+    color: #323232;
+    font-size: 20px;
+    align-self: center;
+    transition: .6s;
+}
+
+#sort__options form button:hover {
+    background: transparent;
+    color: var(--or-2);
+}
+
+
+
 /* Added responsive */
 @media screen and (max-width: 600px) {
     .discover__text__div {
@@ -293,4 +355,22 @@
     #categories__section .row {
         padding: 10px;
     }
+
+    #sort__options form {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .sort__critere {
+        width: 100%;
+    }
+
+    #sort__options form button {
+        width: 100%;
+        border-radius: 10px;
+    }
+
 }

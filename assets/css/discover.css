@@ -261,7 +261,7 @@
 .discover__search__result:hover {
     background: rgba(255, 204, 68, .1);
 }
-
+/* Added responsive */
 @media screen and (max-width: 600px) {
     .discover__text__div {
         flex-direction: column;

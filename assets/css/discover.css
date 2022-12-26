@@ -373,4 +373,15 @@
         border-radius: 10px;
     }
 
+    .discover__text__address form input {
+        width: 225px;
+    }
+
+
+    #discover__header {
+        background-size: cover;
+        background-position: 100% 100%;
+        object-fit: fill;
+    }
+
 }

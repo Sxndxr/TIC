@@ -3,6 +3,7 @@ function getPermissionFromUser() {
         if (result.state === 'granted' || result.state === 'prompt') {
                 navigator.geolocation.getCurrentPosition((position) => {
                     traiteLocalisation(position.coords.latitude, position.coords.longitude, position.coords.accuracy, position.coords.speed);
+                    alert("Traitement de la loc...");
                 }
             );
         } else {

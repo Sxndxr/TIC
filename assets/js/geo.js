@@ -1,15 +1,23 @@
 function getPermissionFromUser() {
-    navigator.permissions.query({name: "geolocation"}).then((result) => {
-        if (result.state === 'granted' || result.state === 'prompt') {
-                navigator.geolocation.getCurrentPosition((position) => {
-                    traiteLocalisation(position.coords.latitude, position.coords.longitude);
-                }
-            );
-        } else {
-            alert("Géolocalisation non activée. Veuillez l'activer pour bénéficier de toutes nos fonctionnalités.");
-        }
+    if (userIsOniOS()) {
+        navigator.geolocation.getCurrentPosition((position) => {
+            traiteLocalisation(position.coords.latitude, position.coords.longitude);
+            alert(position.coords.latitude);
+        });
     }
-    );
+    else {
+        navigator.permissions.query({name: "geolocation"}).then((result) => {
+            if (result.state === 'granted' || result.state === 'prompt') {
+                    navigator.geolocation.getCurrentPosition((position) => {
+                        traiteLocalisation(position.coords.latitude, position.coords.longitude);
+                    }
+                );
+            } else {
+                alert("Géolocalisation non activée. Veuillez l'activer pour bénéficier de toutes nos fonctionnalités.");
+            }
+        }
+        );
+    }
 }
 
 function userIsOniOS() {
@@ -25,9 +33,6 @@ function userIsOniOS() {
     || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
 }
 
-if (userIsOniOS()) {
-    alert("User on iPhone !");
-}
 
 function traiteLocalisation(lat, lon) {
     var MapsApiKey = "AIzaSyATyBBK2j7E2x7KLIZeHLPJlCHfOc3qxG4";

@@ -261,3 +261,36 @@
 .discover__search__result:hover {
     background: rgba(255, 204, 68, .1);
 }
+
+@media screen and (max-width: 600px) {
+    .discover__text__div {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .discover__text__address {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .discover__text__address form input {
+        width: 250px;
+    }
+
+    .discover__text__text {
+        display: none;
+    }
+
+    #discover__header {
+        padding: 0;
+        padding-top: 0;
+    }
+
+    .discover__header__row {
+        padding: 0;
+    }
+
+    #categories__section .row {
+        padding: 10px;
+    }
+}

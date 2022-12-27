@@ -2,7 +2,6 @@ function getPermissionFromUser() {
     if (userIsOniOS()) {
         navigator.geolocation.getCurrentPosition((position) => {
             traiteLocalisation(position.coords.latitude, position.coords.longitude);
-            alert(position.coords.latitude);
         });
     }
     else {
